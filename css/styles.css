@@ -1,0 +1,275 @@
+/* 開発用css */
+article {
+  margin-top: 1em;
+}
+
+div {
+  /* background-color: rgb(229, 244, 255); */
+
+}
+
+/* 開発用ここまで */
+
+/* header */
+.header-container {
+  width: 100%;
+  
+  position: relative;
+}
+
+header h1 {
+  /* googleフォントより */
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(248, 224, 194);
+  padding: 0;
+  margin: 0;
+}
+
+h1::before {
+  content: "百武";
+  background-color: rgb(185, 255, 221);
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  color: rgb(100, 94, 94);
+}
+
+h1::after {
+  content: "倫宏";
+  background-color: rgb(185, 255, 221);
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  color: rgb(100, 94, 94);
+}
+
+
+header p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(247, 247, 97);
+}
+
+.about-container {
+  width: 90%;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.head-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 900;
+}
+
+.me {
+  display: flex;
+}
+.myimage {
+  width: 100%;
+}
+
+.introduce {
+  padding: 1em 1em;
+  text-align: left;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+}
+
+.p-grid-item1 {
+  background-color: rgba(255,182,185,1);
+}
+.p-grid-item2 {
+  background-color: rgba(250,227,217,1);
+}
+.p-grid-item3 {
+  background-color: rgba(187,222,214,1);
+}
+.p-grid-item4 {
+  background-color: rgba(138,198,209,1);
+}
+
+
+skill */
+ section {
+  margin-top: 10px;
+}
+
+.skill-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient( #f5f7fa, #fef9d7);
+}
+
+.skills {
+  display: grid;
+  position: relative;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 20px 2%;
+  align-items: center;
+}
+
+.s-item-card + .s-item-card {
+  margin-left: 20px;
+}
+
+.s-item-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background: rgb(253, 245, 245); */
+  height: 200px;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.s-item-card i {
+  font-size: 2em;
+  color: chartreuse;
+}
+
+.s-item-card:before {
+  content: '';
+  z-index: 1;
+  background: #fff;
+  border-top: 4px solid pink  ;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.s-card-content {
+  z-index: 2;
+}
+
+.s-card-content a {
+  display: inline-block;
+  padding: 5px 20px;
+  background: lightblue;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #f5f7fa;
+}
+
+
+.s-item-card:hover:before {
+  background-color: #000;
+  z-index: 3;
+  border-radius: 3px;
+  border: none;
+  transform: scale( 1.05, 1.2);
+}
+
+.s-item-card:hover .s-card-content {
+  color: #f5f7fa;
+  z-index: 4;
+}
+
+.s-item-card:hover a {
+  background: blueviolet;
+}
+
+/* works */
+
+.works-container {
+  width: 90%;
+  background: rgb(255, 212, 212);
+  margin: 10px auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.w-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.w-card-container .w-card {
+  background: #eee;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: #000 solid 1px;
+}
+
+.w-image {
+  background: #ccc;
+  width: 100%;
+  height: 200PX;
+}
+
+.w-c-title {
+  margin: 10PX 0;
+  font-size: 0.8em;
+}
+
+
+/* お仕事依頼 */
+.contact-container {
+  padding-top: 20px;
+  margin: 30px auto;
+  width: 90%;
+  text-align: center;
+  background: rgb(224, 224, 224);
+}
+
+.contact-container h2 {
+  margin-bottom: 30px;
+}
+
+.request {
+  text-align: left;
+  padding-left: 10%;
+}
+
+.request .r-content {
+  margin-top: 10px;
+  /* 開発用 */
+  background: #fff;
+}
+
+.request li {
+  list-style: disc;
+}
+
+.inquery {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid ;
+}
